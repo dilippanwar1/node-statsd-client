@@ -40,7 +40,7 @@ end
 
 # Creates the target directory for the "git archive" export of the repository
 task :export_dir => :tmpdir do
-  @export_dir = File.join(@tmpdir, "srv/statsd/node-modules/statsd-client")
+  @export_dir = File.join(@tmpdir, "srv/statsd/node_modules/statsd-client")
   FileUtils.mkdir_p(@export_dir)
 end
 
